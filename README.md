@@ -1,5 +1,5 @@
 # nvim
 
-### Hi! There, Priyanshu here
+### Hi there! Priyanshu here
 
 This is my neovim configuration.
