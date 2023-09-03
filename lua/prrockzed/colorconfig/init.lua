@@ -1,0 +1,1 @@
+require("prrockzed.colorconfig.onedark")
