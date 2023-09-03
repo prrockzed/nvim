@@ -1,5 +1,6 @@
-require("prrockzed.keymaps")
-require("prrockzed.options")
+-- plugins file
 require("prrockzed.plugins")
-require("prrockzed.colorscheme")
-require("prrockzed.nvimtree")
+
+-- directories for configuration
+require("prrockzed.localsetting_config")
+require("prrockzed.plugin_config")

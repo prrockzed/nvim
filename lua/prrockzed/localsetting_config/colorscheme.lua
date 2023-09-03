@@ -1,4 +1,4 @@
-require("prrockzed.colorconfig")
+require("prrockzed.color_config")
 
 local colorscheme = "onedark"
 
