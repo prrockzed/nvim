@@ -20,9 +20,15 @@ local plugins = {
 		"folke/neodev.nvim",
 	},
 
-	-- colorscheme plugin
+	-- colorscheme plugins
 	{
 		"navarasu/onedark.nvim",
+	},
+	{
+		"EdenEast/nightfox.nvim",
+	},
+	{
+		"folke/tokyonight.nvim",
 	},
 
 	-- nvim tree (a file explorer)
