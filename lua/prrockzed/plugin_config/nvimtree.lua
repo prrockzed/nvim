@@ -6,7 +6,6 @@ end
 options.setup({
 	filters = {
 		dotfiles = false,
-		exclude = { vim.fn.stdpath("config") .. "/lua/custom" },
 	},
 	disable_netrw = true,
 	hijack_netrw = true,
@@ -40,7 +39,7 @@ options.setup({
 		},
 	},
 	renderer = {
-		root_folder_label = false,
+		root_folder_modifier = ":t",
 		highlight_git = true,
 		highlight_opened_files = "none",
 

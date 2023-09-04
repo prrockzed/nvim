@@ -9,7 +9,7 @@ require("prrockzed.color_config.tokyonight")
 -- tokyonight (tokyonight, tokyonight-day, tokyonight-moon, tokyonight-night, tokyonight-storm)
 
 -- colorscheme configuration
-local colorscheme = "tokyonight-night"
+local colorscheme = "onedark"
 
 local status_ok, _ = pcall(vim.cmd.colorscheme, colorscheme)
 if not status_ok then
