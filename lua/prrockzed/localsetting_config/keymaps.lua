@@ -26,8 +26,12 @@ map("n", "<C-a>", ":vertical resize -2<CR>", opts)
 map("n", "<C-s>", ":vertical resize +2<CR>", opts)
 
 -- Navigate buffers
-map("n", "<S-l>", ":bnext<CR>", opts)
-map("n", "<S-h>", ":bprevious<CR>", opts)
+map("n", "<S-l>", ":BufferNext<CR>", opts)
+map("n", "<S-h>", ":BufferPrevious<CR>", opts)
+
+-- Move Buffers
+map("n", "<S-i>", ":BufferMoveNext<CR>", opts)
+map("n", "<S-u>", ":BufferMovePrevious<CR>", opts)
 
 -- Move text up and down
 map("n", "<S-j>", "<Esc>:m .+1<CR>==gi", opts)
