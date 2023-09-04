@@ -43,6 +43,21 @@ local plugins = {
 			require("nvim-tree").setup({})
 		end,
 	},
+
+	-- status line at the bottom
+	{
+		"nvim-lualine/lualine.nvim",
+		dependencies = {
+			"nvim-tree/nvim-web-devicons",
+		},
+	},
+
+	-- tabline/bufferline at the top
+	{
+		"akinsho/bufferline.nvim",
+		version = "*",
+		dependencies = "nvim-tree/nvim-web-devicons",
+	},
 }
 
 require("lazy").setup(plugins)
