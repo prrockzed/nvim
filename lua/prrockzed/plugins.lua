@@ -13,6 +13,11 @@ vim.opt.rtp:prepend(lazypath)
 
 -- dump your plugins here
 local plugins = {
+  -- for lua functions which i don't want to write twice
+  {
+    'nvim-lua/plenary.nvim',
+  },
+
 	-- which-key plugin
 	{
 		"folke/which-key.nvim",
@@ -72,6 +77,12 @@ local plugins = {
       -- …etc.
     },
     version = '^1.0.0', -- optional: only update when a new 1.x version is released
+  },
+
+  -- gitsigns to highlight git changes
+  {
+    'lewis6991/gitsigns.nvim',
+    event = "VeryLazy",
   },
 }
 
