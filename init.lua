@@ -5,5 +5,5 @@ require("prrockzed.plugins")
 require("prrockzed.color_config")
 
 -- directories for configuration
-require("prrockzed.localsetting_config")
+require("prrockzed.core")
 require("prrockzed.plugin_config")
