@@ -39,7 +39,7 @@ options.setup({
 		},
 	},
 	renderer = {
-		root_folder_modifier = ":t",
+    root_folder_label = false,
 		highlight_git = true,
 		highlight_opened_files = "none",
 
