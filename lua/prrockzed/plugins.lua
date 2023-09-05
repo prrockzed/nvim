@@ -13,15 +13,21 @@ vim.opt.rtp:prepend(lazypath)
 
 -- dump your plugins here
 local plugins = {
-  -- for lua functions which i don't want to write twice
-  {
-    'nvim-lua/plenary.nvim',
-  },
+	-- for lua functions which i don't want to write twice
+	{
+		"nvim-lua/plenary.nvim",
+	},
+
+	-- telescope
+	{
+		"nvim-telescope/telescope.nvim",
+		dependencies = { "nvim-lua/plenary.nvim" },
+	},
 
 	-- which-key plugin
 	{
 		"folke/which-key.nvim",
-    event = "VeryLazy",
+		event = "VeryLazy",
 		{ "folke/neoconf.nvim", cmd = "Neoconf" },
 		"folke/neodev.nvim",
 	},
@@ -29,15 +35,15 @@ local plugins = {
 	-- colorscheme plugins
 	{
 		"navarasu/onedark.nvim",
-    lazy = false,
+		lazy = false,
 	},
 	{
 		"EdenEast/nightfox.nvim",
-    event = "VeryLazy",
+		event = "VeryLazy",
 	},
 	{
 		"folke/tokyonight.nvim",
-    event = "VeryLazy",
+		event = "VeryLazy",
 	},
 
 	-- nvim tree (a file explorer)
@@ -56,34 +62,37 @@ local plugins = {
 	-- status line at the bottom
 	{
 		"nvim-lualine/lualine.nvim",
-    lazy = false,
+		lazy = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
 	},
 
 	-- tabline at the top
-  {'romgrk/barbar.nvim',
-    lazy = false,
-    dependencies = {
-      'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
-      'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
-    },
-    init = function() vim.g.barbar_auto_setup = false end,
-    opts = {
-      -- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-      -- animation = true,
-      -- insert_at_start = true,
-      -- …etc.
-    },
-    version = '^1.0.0', -- optional: only update when a new 1.x version is released
-  },
+	{
+		"romgrk/barbar.nvim",
+		lazy = false,
+		dependencies = {
+			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
+			"nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
+		},
+		init = function()
+			vim.g.barbar_auto_setup = false
+		end,
+		opts = {
+			-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
+			-- animation = true,
+			-- insert_at_start = true,
+			-- …etc.
+		},
+		version = "^1.0.0", -- optional: only update when a new 1.x version is released
+	},
 
-  -- gitsigns to highlight git changes
-  {
-    'lewis6991/gitsigns.nvim',
-    event = "VeryLazy",
-  },
+	-- gitsigns to highlight git changes
+	{
+		"lewis6991/gitsigns.nvim",
+		event = "VeryLazy",
+	},
 }
 
 require("lazy").setup(plugins)
