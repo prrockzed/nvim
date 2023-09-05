@@ -1,5 +1,5 @@
 local options = {
-  laststatus = 3,
+	laststatus = 3,
 	clipboard = "unnamedplus", -- allows neovim to access the system clipboard
 	cmdheight = 0, -- more space in the neovim command line for displaying messages
 	completeopt = { "menuone", "noselect" }, -- mostly just for cmp
@@ -24,7 +24,7 @@ local options = {
 	shiftwidth = 2, -- the number of spaces inserted for each indentation
 	tabstop = 2, -- insert 2 spaces for a tab
 	cursorline = true, -- highlight the current line
-  cursorlineopt = "number",
+	cursorlineopt = "number",
 	number = true, -- set numbered lines
 	relativenumber = true, -- set relative numbered lines
 	numberwidth = 2, -- set number column width to 2 {default 4}
@@ -36,7 +36,9 @@ local options = {
 	sidescrolloff = 8, -- minimal number of screen columns either side of cursor if wrap is `false`
 	guifont = "Hack\\ Nerd\\ Font:h16", -- the font used in graphical neovim applications
 }
-vim.opt.laststatus = 3
+
+-- for alignment of nvim tree
+vim.opt.fillchars:append("vert:▕")
 
 for k, v in pairs(options) do
 	vim.opt[k] = v
