@@ -16,6 +16,7 @@ local plugins = {
 	-- which-key plugin
 	{
 		"folke/which-key.nvim",
+    event = "VeryLazy",
 		{ "folke/neoconf.nvim", cmd = "Neoconf" },
 		"folke/neodev.nvim",
 	},
@@ -23,12 +24,15 @@ local plugins = {
 	-- colorscheme plugins
 	{
 		"navarasu/onedark.nvim",
+    lazy = false,
 	},
 	{
 		"EdenEast/nightfox.nvim",
+    event = "VeryLazy",
 	},
 	{
 		"folke/tokyonight.nvim",
+    event = "VeryLazy",
 	},
 
 	-- nvim tree (a file explorer)
@@ -47,6 +51,7 @@ local plugins = {
 	-- status line at the bottom
 	{
 		"nvim-lualine/lualine.nvim",
+    lazy = false,
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
@@ -54,6 +59,7 @@ local plugins = {
 
 	-- tabline at the top
   {'romgrk/barbar.nvim',
+    lazy = false,
     dependencies = {
       'lewis6991/gitsigns.nvim', -- OPTIONAL: for git status
       'nvim-tree/nvim-web-devicons', -- OPTIONAL: for file icons
