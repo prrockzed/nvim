@@ -45,6 +45,23 @@ local plugins = {
 		"folke/tokyonight.nvim",
 		event = "VeryLazy",
 	},
+	{
+		"romgrk/doom-one.vim",
+		event = "VeryLazy",
+	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		event = "VeryLazy",
+	},
+	{
+		"rebelot/kanagawa.nvim",
+		event = "VeryLazy",
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
+		event = "VeryLazy",
+	},
 
 	-- nvim tree (a file explorer)
 	{
