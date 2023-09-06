@@ -104,12 +104,23 @@ local plugins = {
 		},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
 	},
+
+	-- lazy git plugin for neovim
 	{
 		"kdheepak/lazygit.nvim",
 		-- optional for floating window border decoration
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
+	},
+
+	-- for comments
+	{
+		"numToStr/Comment.nvim",
+		opts = {
+			-- add any options here
+		},
+		event = "VeryLazy",
 	},
 
 	-- gitsigns to highlight git changes
