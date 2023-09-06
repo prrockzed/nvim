@@ -104,11 +104,25 @@ local plugins = {
 		},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
 	},
+	{
+		"kdheepak/lazygit.nvim",
+		-- optional for floating window border decoration
+		dependencies = {
+			"nvim-lua/plenary.nvim",
+		},
+	},
 
 	-- gitsigns to highlight git changes
 	{
 		"lewis6991/gitsigns.nvim",
 		event = "VeryLazy",
+	},
+
+	-- toggleterm for terminal
+	{
+		"akinsho/toggleterm.nvim",
+		lazy = false,
+		version = "*",
 	},
 }
 

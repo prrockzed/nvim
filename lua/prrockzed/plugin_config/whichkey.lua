@@ -21,6 +21,42 @@ local mappings = {
 		k = { "<cmd> Telescope filetypes <CR>", "File Types" },
 		c = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in Current Buffer" },
 	},
+
+	-- all terminals
+	T = {
+		name = "All Terminal",
+		n = { "<cmd> lua _NODE_TOGGLE() <CR>", "Node" },
+		t = { "<cmd> lua _HTOP_TOGGLE() <CR>", "Htop" },
+		p = { "<cmd> lua _PYTHON_TOGGLE() <CR>", "Python" },
+		h = { "<cmd> ToggleTerm size=20 direction=horizontal <CR>", "Horizontal" },
+		v = { "<cmd> ToggleTerm size=70 direction=vertical <CR>", "Vertical" },
+	},
+
+  -- Git
+	g = {
+		name = "Git",
+		g = { "<cmd> lua _LAZYGIT_TOGGLE() <CR>", "Lazygit" },
+		j = { "<cmd> lua require 'gitsigns'.next_hunk() <CR>", "Next Hunk" },
+		k = { "<cmd> lua require 'gitsigns'.prev_hunk() <CR>", "Prev Hunk" },
+		l = { "<cmd> lua require 'gitsigns'.blame_line() <CR>", "Blame" },
+		p = { "<cmd> lua require 'gitsigns'.preview_hunk() <CR>", "Preview Hunk" },
+		r = { "<cmd> lua require 'gitsigns'.reset_hunk() <CR>", "Reset Hunk" },
+		R = { "<cmd> lua require 'gitsigns'.reset_buffer() <CR>", "Reset Buffer" },
+		s = { "<cmd> lua require 'gitsigns'.stage_hunk() <CR>", "Stage Hunk" },
+		u = {
+			"<cmd> lua require 'gitsigns'.undo_stage_hunk() <CR>",
+			"Undo Stage Hunk",
+		},
+		o = { "<cmd> Telescope git_status <CR>", "Git Status" },
+		b = { "<cmd> Telescope git_branches <CR>", "Git branches" },
+		c = { "<cmd> Telescope git_commits <CR>", "Git commit" },
+		f = { "<cmd> Telescope git_files <CR>", "Git files" },
+		h = { "<cmd> Telescope git_stash <CR>", "Git stash" },
+		d = {
+			"<cmd> Gitsigns diffthis HEAD <CR>",
+			"Diff",
+		},
+	},
 }
 
 local setup = {
