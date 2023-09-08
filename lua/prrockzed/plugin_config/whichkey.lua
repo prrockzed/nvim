@@ -118,6 +118,22 @@ local mappings = {
 		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
 	},
 
+	-- Update/Install plugins and languages extensions
+	u = {
+		name = "Update/Install",
+		l = {
+			name = "Lazy",
+			s = { "<cmd> Lazy sync <CR>", "Sync" },
+			k = { "<cmd> Lazy check <CR>", "Check" },
+			h = { "<cmd> Lazy help <CR>", "Help" },
+			c = { "<cmd> Lazy clean <CR>", "Clean" },
+			e = { "<cmd> Lazy health <CR>", "Health" },
+			l = { "<cmd> Lazy log <CR>", "Log" },
+			u = { "<cmd> Lazy update <CR>", "Update" },
+			r = { "<cmd> Lazy reload <CR>", "Reload" },
+		},
+	},
+
 	-- to browse in internet
 	b = {
 		name = "Browse",
