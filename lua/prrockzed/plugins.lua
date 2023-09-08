@@ -23,6 +23,10 @@ local plugins = {
 		"nvim-telescope/telescope.nvim",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
+	{
+		"nvim-telescope/telescope-ui-select.nvim", -- sets vim.ui.select to telescope
+		event = "VeryLazy",
+	},
 
 	-- which-key plugin
 	{
@@ -135,12 +139,12 @@ local plugins = {
 		"tpope/vim-fugitive",
 	},
 
-  -- to browse in internet from nvchad
-  {
-    "lalitmee/browse.nvim",
+	-- to browse in internet from nvchad
+	{
+		"lalitmee/browse.nvim",
 		event = "VeryLazy",
-    dependencies = { "nvim-telescope/telescope.nvim" },
-  },
+		dependencies = { "nvim-telescope/telescope.nvim" },
+	},
 
 	-- toggleterm for terminal
 	{
