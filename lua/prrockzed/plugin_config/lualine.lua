@@ -8,7 +8,6 @@ local project_root = {
 		return vim.fn.fnamemodify(vim.fn.getcwd(), ":t")
 	end,
 	icon = "",
-	cond = hide_in_width,
 	separator = "",
 }
 
