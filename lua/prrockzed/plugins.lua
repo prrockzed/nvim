@@ -130,6 +130,18 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- vim-fugitive
+	{
+		"tpope/vim-fugitive",
+	},
+
+  -- to browse in internet from nvchad
+  {
+    "lalitmee/browse.nvim",
+		event = "VeryLazy",
+    dependencies = { "nvim-telescope/telescope.nvim" },
+  },
+
 	-- toggleterm for terminal
 	{
 		"akinsho/toggleterm.nvim",

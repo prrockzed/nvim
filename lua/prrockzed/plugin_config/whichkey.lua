@@ -1,5 +1,38 @@
 local wk = require("which-key")
 
+local bookmarks = {
+	"https://prrockzed.me",
+	["MonkeyType"] = "https://monkeytype.com",
+	["Music"] = "https://music.youtube.com",
+
+	["Github"] = {
+		["prrockzed"] = "https://github.com/prrockzed",
+		["code_search"] = "https://github.com/search?q=%s&type=code",
+		["repo_search"] = "https://github.com/search?q=%s&type=repositories",
+		["issues_search"] = "https://github.com/search?q=%s&type=issues",
+		["pulls_search"] = "https://github.com/search?q=%s&type=pullrequests",
+	},
+
+	["Neovim"] = {
+		["Neovim"] = "https://github.com/neovim/neovim",
+		["Neovim Discourse Group"] = "https://neovim.discourse.group/",
+		["Awesome Neovim"] = "https://github.com/rockerBOO/awesome-neovim",
+	},
+
+	["Competitive Programming"] = {
+		["Awesome CP"] = "https://github.com/lnishan/awesome-competitive-programming",
+		["Codeforces"] = "https://codeforces.com",
+	},
+
+	["Chess"] = {
+		["2700chess"] = "https://www.2700chess.com",
+		["Chess.com"] = "https://www.chess.com",
+		["Chessbase India"] = "https://chessbase.in",
+		["Fide"] = "https://www.fide.com",
+		["Lichess"] = "https://lichess.org",
+	},
+}
+
 local mappings = {
 	["e"] = { "<cmd> NvimTreeToggle<cr>", "Nvim Tree Toggle" },
 	["N"] = { "<cmd> enew <CR>", "New buffer" },
@@ -37,17 +70,17 @@ local mappings = {
 		name = "Git",
 		g = { "<cmd> lua _LAZYGIT_TOGGLE() <CR>", "Lazygit" },
 		j = { "<cmd> lua require 'gitsigns'.next_hunk() <CR>", "Next Hunk" },
-		k = { "<cmd> lua require 'gitsigns'.prev_hunk() <CR>", "Prev Hunk" },
+		v = { "<cmd> lua require 'gitsigns'.prev_hunk() <CR>", "Prev Hunk" },
 		l = { "<cmd> lua require 'gitsigns'.blame_line() <CR>", "Blame" },
 		p = { "<cmd> lua require 'gitsigns'.preview_hunk() <CR>", "Preview Hunk" },
 		r = { "<cmd> lua require 'gitsigns'.reset_hunk() <CR>", "Reset Hunk" },
 		R = { "<cmd> lua require 'gitsigns'.reset_buffer() <CR>", "Reset Buffer" },
-		s = { "<cmd> lua require 'gitsigns'.stage_hunk() <CR>", "Stage Hunk" },
+		k = { "<cmd> lua require 'gitsigns'.stage_hunk() <CR>", "Stage Hunk" },
 		u = {
 			"<cmd> lua require 'gitsigns'.undo_stage_hunk() <CR>",
 			"Undo Stage Hunk",
 		},
-		o = { "<cmd> Telescope git_status <CR>", "Git Status" },
+		s = { "<cmd> Telescope git_status <CR>", "Git Status" },
 		b = { "<cmd> Telescope git_branches <CR>", "Git branches" },
 		c = { "<cmd> Telescope git_commits <CR>", "Git commit" },
 		f = { "<cmd> Telescope git_files <CR>", "Git files" },
@@ -83,6 +116,45 @@ local mappings = {
 		name = "Setup",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
+	},
+
+	-- to browse in internet
+	b = {
+		name = "Browse",
+		i = {
+			function()
+				require("browse").input_search()
+			end,
+			"Search Input",
+		},
+
+		d = {
+			function()
+				require("browse.devdocs").search()
+			end,
+			"Search Devdocs",
+		},
+
+		f = {
+			function()
+				require("browse.devdocs").search_with_filetype()
+			end,
+			"Search Devdocs with FileType",
+		},
+
+		m = {
+			function()
+				require("browse.mdn").search()
+			end,
+			"Search Mdn",
+		},
+
+		b = {
+			function()
+				require("browse").open_bookmarks({ bookmarks = bookmarks })
+			end,
+			"Search Bookmarks",
+		},
 	},
 }
 
