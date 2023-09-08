@@ -67,6 +67,12 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- tree sitter for syntax highlighting
+	{
+		"nvim-treesitter/nvim-treesitter",
+		lazy = false,
+	},
+
 	-- nvim tree (a file explorer)
 	{
 		"nvim-tree/nvim-tree.lua",

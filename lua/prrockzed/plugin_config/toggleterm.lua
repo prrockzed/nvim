@@ -1,9 +1,9 @@
-local status_ok, toggleterm = pcall(require, "toggleterm")
+local status_ok, options = pcall(require, "toggleterm")
 if not status_ok then
 	return
 end
 
-toggleterm.setup({
+options.setup({
 	size = 20,
 	open_mapping = [[<c-\>]],
 	hide_numbers = true,
