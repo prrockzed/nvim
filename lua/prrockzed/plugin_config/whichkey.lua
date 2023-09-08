@@ -32,7 +32,7 @@ local mappings = {
 		v = { "<cmd> ToggleTerm size=70 direction=vertical <CR>", "Vertical" },
 	},
 
-  -- Git
+	-- Git
 	g = {
 		name = "Git",
 		g = { "<cmd> lua _LAZYGIT_TOGGLE() <CR>", "Lazygit" },
@@ -56,6 +56,33 @@ local mappings = {
 			"<cmd> Gitsigns diffthis HEAD <CR>",
 			"Diff",
 		},
+	},
+
+	-- Buffer management using Barbar plugin
+	B = {
+		name = "Buffer",
+		f = { "<cmd> BufferFirst <CR>", "Move to First Buffer" },
+		l = { "<cmd> BufferLast <CR>", "Move to Last Buffer" },
+		p = { "<cmd> BufferPin <CR>", "Pin/Unpin Buffer" },
+		t = { "<cmd> BufferRestore <CR>", "Restore Buffer" },
+		s = { "<cmd> BufferMoveStart <CR>", "Move Buffer to Start" },
+		i = { "<cmd> BufferPick <CR>", "Buffer Pick" },
+		d = { "<cmd> BufferPickDelete <CR>", "Delete Picked Buffer" },
+		c = { "<cmd> BufferCloseAllButCurrentOrPinned <CR>", "Delete Picked Buffer" },
+		o = {
+			name = "Order",
+			n = { "<cmd> BufferOrderByBufferNumber <CR>", "Order by Buffer Number" },
+			d = { "<cmd> BufferOrderByDirectory <CR>", "Order by Directory" },
+			l = { "<cmd> BufferOrderByLanguage <CR>", "Order by Language" },
+			w = { "<cmd> BufferOrderByWindowNumber <CR>", "Order by Window Number" },
+		},
+	},
+
+	-- setup related keymappings
+	S = {
+		name = "Setup",
+		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
+		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
 	},
 }
 

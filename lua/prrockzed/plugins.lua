@@ -108,6 +108,7 @@ local plugins = {
 	-- lazy git plugin for neovim
 	{
 		"kdheepak/lazygit.nvim",
+		event = "VeryLazy",
 		-- optional for floating window border decoration
 		dependencies = {
 			"nvim-lua/plenary.nvim",
@@ -132,7 +133,7 @@ local plugins = {
 	-- toggleterm for terminal
 	{
 		"akinsho/toggleterm.nvim",
-		lazy = false,
+		event = "VeryLazy",
 		version = "*",
 	},
 }
