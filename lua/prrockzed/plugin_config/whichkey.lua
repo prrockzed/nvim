@@ -112,7 +112,7 @@ local mappings = {
 	},
 
 	-- setup related keymappings
-	S = {
+	s = {
 		name = "Setup",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
@@ -122,7 +122,7 @@ local mappings = {
 	u = {
 		name = "Update/Install",
 		l = {
-			name = "Lazy",
+			name = "Lazy - Plugin Manager",
 			s = { "<cmd> Lazy sync <CR>", "Sync" },
 			k = { "<cmd> Lazy check <CR>", "Check" },
 			h = { "<cmd> Lazy help <CR>", "Help" },
@@ -131,6 +131,17 @@ local mappings = {
 			l = { "<cmd> Lazy log <CR>", "Log" },
 			u = { "<cmd> Lazy update <CR>", "Update" },
 			r = { "<cmd> Lazy reload <CR>", "Reload" },
+		},
+		t = {
+			name = "Treesitter - Syntax Highlighting",
+			i = { "<cmd> TSInstallInfo <CR>", "Install Info" },
+			s = { "<cmd> TSInstallSync <CR>", "Install Sync" },
+			u = { "<cmd> TSUpdate all <CR>", "Update All" },
+			y = { "<cmd> TSUpdateSync <CR>", "Update Sync" },
+			m = { "<cmd> TSModuleInfo <CR>", "Module Info" },
+			a = { "<cmd> TSToggle highlight <CR>", "Toggle Highlight" },
+			b = { "<cmd> TSToggle indent <CR>", "Toggle Indent" },
+			c = { "<cmd> TSToggle incremental_selection <CR>", "Toggle Incremental Selection" },
 		},
 	},
 
