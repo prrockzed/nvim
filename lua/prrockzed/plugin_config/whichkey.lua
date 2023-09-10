@@ -17,6 +17,7 @@ local bookmarks = {
 		["Neovim"] = "https://github.com/neovim/neovim",
 		["Neovim Discourse Group"] = "https://neovim.discourse.group/",
 		["Awesome Neovim"] = "https://github.com/rockerBOO/awesome-neovim",
+		["Neovim Cheatsheet"] = "https://vim.rtorr.com",
 	},
 
 	["Competitive Programming"] = {
@@ -116,6 +117,8 @@ local mappings = {
 		name = "Setup",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
+    e = { "<cmd> e ~/.config/nvim/lua/prrockzed/cheatsheet.txt <CR>", "Edit Cheatsheet" },
+    s = { "<cmd> tabnew ~/.config/nvim/lua/prrockzed/cheatsheet.txt <CR>", "View Cheatsheet" },
 	},
 
 	-- Update/Install plugins and languages extensions
