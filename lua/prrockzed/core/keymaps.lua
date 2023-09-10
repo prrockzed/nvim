@@ -48,6 +48,8 @@ map("n", "<Esc>", ":noh <CR>", opts)
 -- Copy whole file
 map("n", "<C-c>",  "<cmd> %y+ <CR>", opts)
 
+map("n", "<BS>", "X", opts)
+
 -- Insert --
 -- Press kj fast to exit insert mode
 map("i", "kj", "<ESC>", opts)
