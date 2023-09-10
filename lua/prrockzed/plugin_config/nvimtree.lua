@@ -39,12 +39,12 @@ options.setup({
 		},
 	},
 	renderer = {
-    root_folder_label = false,
+		root_folder_label = false,
 		highlight_git = true,
 		highlight_opened_files = "none",
 
 		indent_markers = {
-			enable = false,
+			enable = true,
 		},
 
 		icons = {

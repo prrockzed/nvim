@@ -158,6 +158,11 @@ local plugins = {
 		event = "VeryLazy",
 		version = "*",
 	},
+
+	-- indent blankline
+	{
+		"lukas-reineke/indent-blankline.nvim",
+	},
 }
 
 require("lazy").setup(plugins)
