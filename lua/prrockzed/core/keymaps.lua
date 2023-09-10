@@ -45,9 +45,22 @@ map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
 -- Esc to No Highlight
 map("n", "<Esc>", ":noh <CR>", opts)
 
+-- Copy whole file
+map("n", "<C-c>",  "<cmd> %y+ <CR>", opts)
+
 -- Insert --
 -- Press kj fast to exit insert mode
 map("i", "kj", "<ESC>", opts)
+
+-- go to  beginning and end
+map("i", "<C-b>", "<ESC>^i", opts) -- beginning of line
+map("i", "<C-e>", "<End>", opts) -- end of line
+
+-- navigate within insert mode
+map("i", "<C-h>", "<Left>", opts) -- Move left
+map("i", "<C-l>", "<Right>", opts) -- Move right
+map("i", "<C-j>", "<Down>", opts) -- Move down
+map("i", "<C-k>", "<Up>", opts) -- Move up
 
 -- Visual --
 -- Stay in indent mode
