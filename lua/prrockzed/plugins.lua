@@ -163,6 +163,12 @@ local plugins = {
 	{
 		"lukas-reineke/indent-blankline.nvim",
 	},
+
+  -- rainbow plugin for colorful brackets
+  {
+    "HiPhish/rainbow-delimiters.nvim",
+    lazy = false,
+  },
 }
 
 require("lazy").setup(plugins)

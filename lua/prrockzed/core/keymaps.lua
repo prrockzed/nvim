@@ -46,7 +46,7 @@ map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
 map("n", "<Esc>", ":noh <CR>", opts)
 
 -- Copy whole file
-map("n", "<C-c>",  "<cmd> %y+ <CR>", opts)
+map("n", "<C-c>",  "<cmd> %y+ <CR><CR>", opts)
 
 map("n", "<BS>", "X", opts)
 
