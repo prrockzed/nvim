@@ -3,9 +3,6 @@ if not status_ok then
 	return
 end
 
-vim.g.indent_blankline_char = "▏"
-vim.g.indent_blankline_show_trailing_blankline_indent = false
-
 options.setup({
 	context_patterns = {
 		"class",
@@ -30,6 +27,8 @@ options.setup({
 		"operation_type",
 	},
 	space_char_blankline = " ",
+	indent_blankline_char = "▏",
+	indent_blankline_show_trailing_blankline_indent = false,
 	show_current_context = true,
 	show_current_context_start = false,
 	show_end_of_line = true,
