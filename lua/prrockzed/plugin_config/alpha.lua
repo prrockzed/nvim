@@ -1,4 +1,4 @@
-local status_ok, alpha = pcall(require, "alpha")
+local status_ok, options = pcall(require, "alpha")
 if not status_ok then
 	return
 end
@@ -39,4 +39,4 @@ dashboard.section.buttons.opts.hl = "Keyword"
 
 dashboard.opts.opts.noautocmd = true
 -- vim.cmd([[autocmd User AlphaReady echo 'ready']])
-alpha.setup(dashboard.opts)
+options.setup(dashboard.opts)

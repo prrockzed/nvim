@@ -182,6 +182,7 @@ local plugins = {
 	-- cheatsheet plugin
 	{
 		"sudormrfbin/cheatsheet.nvim",
+		event = "VeryLazy",
 	},
 }
 
