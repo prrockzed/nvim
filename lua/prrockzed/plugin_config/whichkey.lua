@@ -116,9 +116,10 @@ local mappings = {
 	s = {
 		name = "Setup",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
-		c = { "<cmd> checkhealth <CR>", "Checkhealth" },
-    e = { "<cmd> e ~/.config/nvim/lua/prrockzed/cheatsheet.txt <CR>", "Edit Cheatsheet" },
-    s = { "<cmd> tabnew ~/.config/nvim/lua/prrockzed/cheatsheet.txt <CR>", "View Cheatsheet" },
+		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
+    c = { "<cmd> Cheatsheet <CR>", "Cheatsheet Plugin" },
+    f = { "<cmd> Cheatsheet! <CR>", "Cheatsheet Floating Window" },
+    s = { "<cmd> CheatsheetEdit <CR>", "Cheatsheet File" },
 	},
 
 	-- Update/Install plugins and languages extensions

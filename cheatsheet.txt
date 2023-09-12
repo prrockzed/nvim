@@ -1,0 +1,4 @@
+Here I will keep all the keybindings specific to this configuration of Neovim.
+The common keybinding are given all over the internet.
+And if you are very tired of browsing the internet then just do: 
+:Tutor

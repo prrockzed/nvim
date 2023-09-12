@@ -145,6 +145,15 @@ local plugins = {
 		"tpope/vim-fugitive",
 	},
 
+	-- dashboard/opening setup
+	{
+		"goolord/alpha-nvim",
+		dependencies = { "nvim-tree/nvim-web-devicons" },
+		config = function()
+			require("alpha").setup(require("alpha.themes.startify").config)
+		end,
+	},
+
 	-- to browse in internet from nvchad
 	{
 		"lalitmee/browse.nvim",
@@ -164,11 +173,16 @@ local plugins = {
 		"lukas-reineke/indent-blankline.nvim",
 	},
 
-  -- rainbow plugin for colorful brackets
-  {
-    "HiPhish/rainbow-delimiters.nvim",
-    lazy = false,
-  },
+	-- rainbow plugin for colorful brackets
+	{
+		"HiPhish/rainbow-delimiters.nvim",
+		lazy = false,
+	},
+
+	-- cheatsheet plugin
+	{
+		"sudormrfbin/cheatsheet.nvim",
+	},
 }
 
 require("lazy").setup(plugins)
