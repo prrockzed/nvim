@@ -4,6 +4,7 @@ if not status_ok then
 end
 
 vim.g.barbar_auto_setup = false -- disable auto-setup
+options.setup({})
 -- DUE TO THE WARNING BELOW
 -- options.setup({
 -- 	-- WARN: do not copy everything below into your config!

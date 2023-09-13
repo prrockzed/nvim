@@ -81,9 +81,6 @@ local plugins = {
 		dependencies = {
 			"nvim-tree/nvim-web-devicons",
 		},
-		config = function()
-			require("nvim-tree").setup({})
-		end,
 	},
 
 	-- load luasnips + cmp related in insert mode only
@@ -131,15 +128,6 @@ local plugins = {
 			"lewis6991/gitsigns.nvim", -- OPTIONAL: for git status
 			"nvim-tree/nvim-web-devicons", -- OPTIONAL: for file icons
 		},
-		init = function()
-			vim.g.barbar_auto_setup = false
-		end,
-		opts = {
-			-- lazy.nvim will automatically call setup for you. put your options here, anything missing will use the default:
-			-- animation = true,
-			-- insert_at_start = true,
-			-- …etc.
-		},
 		version = "^1.0.0", -- optional: only update when a new 1.x version is released
 	},
 
@@ -147,7 +135,6 @@ local plugins = {
 	{
 		"kdheepak/lazygit.nvim",
 		event = "VeryLazy",
-		-- optional for floating window border decoration
 		dependencies = {
 			"nvim-lua/plenary.nvim",
 		},
@@ -156,10 +143,8 @@ local plugins = {
 	-- for comments
 	{
 		"numToStr/Comment.nvim",
-		opts = {
-			-- add any options here
-		},
 		event = "VeryLazy",
+		opts = {},
 	},
 
 	-- gitsigns to highlight git changes
@@ -211,7 +196,6 @@ local plugins = {
 	{
 		"stevearc/dressing.nvim",
 		event = "VeryLazy",
-		opts = {},
 	},
 
 	-- cheatsheet plugin
