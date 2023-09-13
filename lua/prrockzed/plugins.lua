@@ -86,6 +86,34 @@ local plugins = {
 		end,
 	},
 
+	-- load luasnips + cmp related in insert mode only
+	{
+		"hrsh7th/nvim-cmp",
+		event = "InsertEnter",
+		dependencies = {
+			{
+				-- snippet plugin
+				"L3MON4D3/LuaSnip",
+				"rafamadriz/friendly-snippets",
+			},
+
+			-- autopairing of (){}[] etc
+			{
+				"windwp/nvim-autopairs",
+			},
+
+			-- cmp sources plugins
+			{
+				"saadparwaiz1/cmp_luasnip",
+				"hrsh7th/cmp-nvim-lua",
+				"hrsh7th/cmp-nvim-lsp",
+				"hrsh7th/cmp-buffer",
+				"hrsh7th/cmp-path",
+				"hrsh7th/cmp-cmdline",
+			},
+		},
+	},
+
 	-- status line at the bottom
 	{
 		"nvim-lualine/lualine.nvim",
@@ -177,6 +205,13 @@ local plugins = {
 	{
 		"HiPhish/rainbow-delimiters.nvim",
 		lazy = false,
+	},
+
+	-- improved vim ui
+	{
+		"stevearc/dressing.nvim",
+		event = "VeryLazy",
+		opts = {},
 	},
 
 	-- cheatsheet plugin

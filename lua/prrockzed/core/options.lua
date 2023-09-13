@@ -56,9 +56,6 @@ local options = {
 -- for alignment of nvim tree
 vim.opt.fillchars:append("vert:▕")
 
--- for end of line
-vim.opt.listchars:append("eol:↴")
-
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
