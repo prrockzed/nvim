@@ -1,10 +1,10 @@
 -- colorschemes configuration goes here
-require("prrockzed.color_config.onedark")
-require("prrockzed.color_config.nightfox")
-require("prrockzed.color_config.tokyonight")
-require("prrockzed.color_config.catppuccin")
-require("prrockzed.color_config.kanagawa")
-require("prrockzed.color_config.gruvbox")
+require("prrockzed.plugin_config.color_config.onedark")
+require("prrockzed.plugin_config.color_config.nightfox")
+require("prrockzed.plugin_config.color_config.tokyonight")
+require("prrockzed.plugin_config.color_config.catppuccin")
+require("prrockzed.plugin_config.color_config.kanagawa")
+require("prrockzed.plugin_config.color_config.gruvbox")
 
 -- list of external colorschemes
 -- onedark (dark, darker, cool, deep, warm, warmer, light)

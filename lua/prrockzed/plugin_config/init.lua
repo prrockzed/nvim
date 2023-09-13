@@ -1,3 +1,7 @@
+-- Directories
+require("prrockzed.plugin_config.color_config") -- Color configuration
+
+-- Files
 require("prrockzed.plugin_config.nvimtree")
 require("prrockzed.plugin_config.lualine")
 require("prrockzed.plugin_config.barbar")
