@@ -23,7 +23,7 @@ options.setup({
 	},
 
 	window = {
-    completion = options.config.window.bordered(),
+		completion = options.config.window.bordered(),
 	},
 
 	mapping = {
@@ -31,7 +31,7 @@ options.setup({
 		["<C-n>"] = options.mapping.select_next_item(),
 		["<C-b>"] = options.mapping.scroll_docs(-4),
 		["<C-f>"] = options.mapping.scroll_docs(4),
-		["<C-p>"] = options.mapping.complete(),
+		["<C-c>"] = options.mapping.complete(),
 		["<C-y>"] = options.config.disable,
 		["<C-e>"] = options.mapping.abort(),
 
