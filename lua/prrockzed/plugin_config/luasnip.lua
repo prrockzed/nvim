@@ -3,6 +3,9 @@ if not status_ok then
 	return
 end
 
+-- for custom snippets stored in the snippets directory under prrockzed
+require("prrockzed.snippets")
+
 -- vscode format
 require("luasnip.loaders.from_vscode").lazy_load()
 require("luasnip.loaders.from_vscode").lazy_load({ paths = vim.g.vscode_snippets_path or "" })
@@ -30,3 +33,28 @@ options.config.set_config({
 	history = true, --keep around last snippet local to jump back
 	updateevents = "TextChanged,TextChangedI", --update changes as you type
 })
+
+-- luasnip custom keymappings
+-- declaring variables
+local set = vim.keymap.set
+local mode = { "i", "s" }
+local sil = { silent = true }
+
+-- key maps
+set(mode, "<C-i>", function()
+	if options.expand() then
+		options.expand()
+	end
+end, sil)
+
+set(mode, "<C-n>", function()
+	if options.jumpable(1) then
+		options.jump(1)
+	end
+end, sil)
+
+set(mode, "<C-p>", function()
+	if options.jumpable(-1) then
+		options.jump(-1)
+	end
+end, sil)
