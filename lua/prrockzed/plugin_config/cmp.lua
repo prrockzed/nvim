@@ -27,13 +27,13 @@ options.setup({
 	},
 
 	mapping = {
-		["<C-k>"] = options.mapping.select_prev_item(),
-		["<C-j>"] = options.mapping.select_next_item(),
+		["<C-p>"] = options.mapping.select_prev_item(),
+		["<C-n>"] = options.mapping.select_next_item(),
 		["<C-b>"] = options.mapping.scroll_docs(-4),
 		["<C-f>"] = options.mapping.scroll_docs(4),
-		["<C-a>"] = options.mapping.complete(),
+		["<C-p>"] = options.mapping.complete(),
 		["<C-y>"] = options.config.disable,
-		["<C-e>"] = options.mapping.close(),
+		["<C-e>"] = options.mapping.abort(),
 
 		["<CR>"] = options.mapping.confirm({
 			behavior = options.ConfirmBehavior.Insert,
@@ -43,10 +43,8 @@ options.setup({
 		["<Tab>"] = options.mapping(function(fallback)
 			if options.visible() then
 				options.select_next_item()
-			elseif luasnip.expandable() then
-				luasnip.expand()
-			elseif luasnip.expand_or_jumpable() then
-				luasnip.expand_or_jump()
+			elseif luasnip.jumpable(1) then
+				luasnip.jump(1)
 			elseif check_backspace() then
 				fallback()
 			else

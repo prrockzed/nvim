@@ -152,7 +152,7 @@ options.setup({
 			-- Set to `false` to disable
 			mappings = {
 				["<Esc>"] = "Close",
-				["<C-c>"] = "Close",
+				["kj"] = "Close",
 				["<CR>"] = "Confirm",
 			},
 
