@@ -211,4 +211,10 @@ local plugins = {
 	},
 }
 
-require("lazy").setup(plugins)
+local opts = {
+	ui = {
+		border = "single",
+	},
+}
+
+require("lazy").setup(plugins, opts)
