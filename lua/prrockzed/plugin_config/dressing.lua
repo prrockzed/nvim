@@ -50,7 +50,7 @@ options.setup({
 		mappings = {
 			n = {
 				["<Esc>"] = "Close",
-				["kj"] = "Close",
+				["q"] = "Close",
 				["<CR>"] = "Confirm",
 			},
 			i = {
@@ -152,7 +152,7 @@ options.setup({
 			-- Set to `false` to disable
 			mappings = {
 				["<Esc>"] = "Close",
-				["kj"] = "Close",
+				["q"] = "Close",
 				["<CR>"] = "Confirm",
 			},
 
