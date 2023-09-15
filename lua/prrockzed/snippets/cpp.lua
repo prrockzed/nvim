@@ -31,6 +31,7 @@ local compro = s("compro", {
 	t({ "  cin >> t;", "" }),
 	t({ "  while (t--) {", "" }),
 	t({ "    solve();", "" }),
+	t({ '    cout << endl;', "" }),
 	t({ "  }", "", "" }),
 	t({ "  return 0;", "" }),
 	t("}"),
