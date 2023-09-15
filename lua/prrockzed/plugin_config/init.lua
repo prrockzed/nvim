@@ -1,6 +1,7 @@
 -- Directories
-require("prrockzed.plugin_config.color_config") -- Color configuration
+require("prrockzed.plugin_config.lsp_config") -- Auto Completion configuration
 require("prrockzed.plugin_config.cmp_config") -- Auto Completion configuration
+require("prrockzed.plugin_config.color_config") -- Color configuration
 
 -- Files
 require("prrockzed.plugin_config.nvimtree")

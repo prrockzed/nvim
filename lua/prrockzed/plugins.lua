@@ -28,6 +28,14 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- package manager for neovim lsp
+	{
+		"williamboman/mason.nvim",
+		dependencies = {
+			"williamboman/mason-lspconfig.nvim",
+		},
+	},
+
 	-- which-key plugin
 	{
 		"folke/which-key.nvim",
@@ -156,6 +164,7 @@ local plugins = {
 	-- vim-fugitive
 	{
 		"tpope/vim-fugitive",
+		event = "VeryLazy",
 	},
 
 	-- dashboard/opening setup
