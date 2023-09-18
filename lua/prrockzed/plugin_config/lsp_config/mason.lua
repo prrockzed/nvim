@@ -3,20 +3,6 @@ if not status_ok then
 	return
 end
 
-local status_ok, mason_lspconfig = pcall(require, "mason-lspconfig")
-if not status_ok then
-	return
-end
-
-local float = {
-	focusable = true,
-	style = "minimal",
-	border = "single",
-	source = "always",
-	header = "",
-	prefix = "",
-}
-
 options.setup({
 	ui = {
 		border = "single",
