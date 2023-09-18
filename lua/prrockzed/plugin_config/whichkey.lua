@@ -113,17 +113,17 @@ local mappings = {
 	},
 
 	-- setup related keymappings
-	s = {
-		name = "Setup",
+	l = {
+		name = "Lookup",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
-    c = { "<cmd> Cheatsheet <CR>", "Cheatsheet Plugin" },
-    f = { "<cmd> Cheatsheet! <CR>", "Cheatsheet Floating Window" },
-    s = { "<cmd> CheatsheetEdit <CR>", "Cheatsheet File" },
+		c = { "<cmd> Cheatsheet <CR>", "Cheatsheet Plugin" },
+		f = { "<cmd> Cheatsheet! <CR>", "Cheatsheet Floating Window" },
+		s = { "<cmd> CheatsheetEdit <CR>", "Cheatsheet File" },
 	},
 
 	-- Update/Install plugins and languages extensions
-	u = {
+	s = {
 		name = "Update/Install",
 		l = {
 			name = "Lazy - Plugin Manager",
@@ -146,6 +146,13 @@ local mappings = {
 			a = { "<cmd> TSToggle highlight <CR>", "Toggle Highlight" },
 			b = { "<cmd> TSToggle indent <CR>", "Toggle Indent" },
 			c = { "<cmd> TSToggle incremental_selection <CR>", "Toggle Incremental Selection" },
+		},
+		m = {
+			name = "mason",
+			m = { "<cmd> Mason <CR>", "Check" },
+			u = { "<cmd> MasonUpdate <CR>", "Update" },
+			z = { "<cmd> MasonUninstallAll <CR>", "Uninstall All" },
+			l = { "<cmd> MasonLog <CR>", "Log" },
 		},
 	},
 
