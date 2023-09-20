@@ -1,7 +1,7 @@
 -- Core setup
 require("prrockzed.core")
 
--- Plugins file
+-- Plugins directory
 require("prrockzed.plugins")
 
 -- Plugins configuration directory

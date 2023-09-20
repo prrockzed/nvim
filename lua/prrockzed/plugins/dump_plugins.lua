@@ -1,17 +1,5 @@
-local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
-if not vim.loop.fs_stat(lazypath) then
-	vim.fn.system({
-		"git",
-		"clone",
-		"--filter=blob:none",
-		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
-		lazypath,
-	})
-end
-vim.opt.rtp:prepend(lazypath)
-
 -- dump your plugins here
+
 local plugins = {
 	-- for lua functions which i don't want to write twice
 	{
@@ -28,6 +16,7 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- the legendaey nvim lspconfig
 	{
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
@@ -37,7 +26,7 @@ local plugins = {
 		},
 	},
 
-	-- linting and formatting
+	-- linting and formatting with the help of lspconfig
 	{
 		"jose-elias-alvarez/null-ls.nvim",
 	},
@@ -225,10 +214,4 @@ local plugins = {
 	},
 }
 
-local opts = {
-	ui = {
-		border = "single",
-	},
-}
-
-require("lazy").setup(plugins, opts)
+return plugins
