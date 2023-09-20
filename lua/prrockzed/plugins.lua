@@ -37,6 +37,11 @@ local plugins = {
 		},
 	},
 
+	-- linting and formatting
+	{
+		"jose-elias-alvarez/null-ls.nvim",
+	},
+
 	-- package manager for neovim lsp
 	{
 		"williamboman/mason.nvim",

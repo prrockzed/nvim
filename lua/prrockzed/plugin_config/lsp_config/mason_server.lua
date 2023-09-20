@@ -3,9 +3,11 @@ if not status_ok then
 	return
 end
 
+-- list of servers for mason to install
 local server = {
-	-- list of servers for mason to install
-	"",
+	-- for lua
+	"lua_ls",
+	"stylua",
 }
 
 options.setup({
