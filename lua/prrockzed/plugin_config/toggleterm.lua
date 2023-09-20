@@ -30,6 +30,7 @@ function _G.set_terminal_keymaps()
 	local opts = { noremap = true }
 	vim.api.nvim_buf_set_keymap(0, "t", "<esc>", [[<C-\><C-n>]], opts)
 	vim.api.nvim_buf_set_keymap(0, "t", "kj", [[<C-\><C-n>]], opts)
+	vim.api.nvim_buf_set_keymap(0, "n", "q", "<cmd> ToggleTerm <CR>", opts)
 end
 
 vim.cmd("autocmd! TermOpen term://* lua set_terminal_keymaps()")
