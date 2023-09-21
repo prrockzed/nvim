@@ -7,5 +7,5 @@ In Normal Mode:
 <Space>     --> Which key setup
 <Space><bs> --> Which key one level up
 ` or '      --> File which key
-<C-c>       --> Copy all
+<C-c>       --> Copy whole file
 W           --> Collapse nvim tree recursively

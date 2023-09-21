@@ -1,5 +1,5 @@
 -- Directories
-require("prrockzed.plugin_config.lsp_config") -- Auto Completion configuration
+require("prrockzed.plugin_config.lsp_config") -- Language Server Protocol configuration
 require("prrockzed.plugin_config.cmp_config") -- Auto Completion configuration
 require("prrockzed.plugin_config.color_config") -- Color configuration
 

@@ -1,1 +1,1 @@
-require("prrockzed.plugins.lazy") -- Auto Completion configuration
+require("prrockzed.plugins.lazy")

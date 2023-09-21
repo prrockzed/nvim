@@ -16,7 +16,7 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
-	-- the legendaey nvim lspconfig
+	-- the legendary language server protocol - nvim lspconfig
 	{
 		"neovim/nvim-lspconfig",
 		event = { "BufReadPre", "BufNewFile" },
@@ -47,37 +47,6 @@ local plugins = {
 		"folke/neodev.nvim",
 	},
 
-	-- colorscheme plugins
-	{
-		"navarasu/onedark.nvim",
-		lazy = false,
-	},
-	{
-		"EdenEast/nightfox.nvim",
-		event = "VeryLazy",
-	},
-	{
-		"folke/tokyonight.nvim",
-		event = "VeryLazy",
-	},
-	{
-		"romgrk/doom-one.vim",
-		event = "VeryLazy",
-	},
-	{
-		"catppuccin/nvim",
-		name = "catppuccin",
-		event = "VeryLazy",
-	},
-	{
-		"rebelot/kanagawa.nvim",
-		event = "VeryLazy",
-	},
-	{
-		"ellisonleao/gruvbox.nvim",
-		event = "VeryLazy",
-	},
-
 	-- tree sitter for syntax highlighting
 	{
 		"nvim-treesitter/nvim-treesitter",
@@ -94,7 +63,7 @@ local plugins = {
 		},
 	},
 
-	-- load luasnips + cmp related in insert mode only
+	-- luasnips + cmp
 	{
 		"hrsh7th/nvim-cmp",
 		event = "InsertEnter",
@@ -193,6 +162,7 @@ local plugins = {
 	-- indent blankline
 	{
 		"lukas-reineke/indent-blankline.nvim",
+		event = "VeryLazy",
 	},
 
 	-- rainbow plugin for colorful brackets
@@ -210,6 +180,37 @@ local plugins = {
 	-- cheatsheet plugin
 	{
 		"sudormrfbin/cheatsheet.nvim",
+		event = "VeryLazy",
+	},
+
+	-- colorscheme plugins
+	{
+		"navarasu/onedark.nvim",
+		lazy = false,
+	},
+	{
+		"EdenEast/nightfox.nvim",
+		event = "VeryLazy",
+	},
+	{
+		"folke/tokyonight.nvim",
+		event = "VeryLazy",
+	},
+	{
+		"romgrk/doom-one.vim",
+		event = "VeryLazy",
+	},
+	{
+		"catppuccin/nvim",
+		name = "catppuccin",
+		event = "VeryLazy",
+	},
+	{
+		"rebelot/kanagawa.nvim",
+		event = "VeryLazy",
+	},
+	{
+		"ellisonleao/gruvbox.nvim",
 		event = "VeryLazy",
 	},
 }
