@@ -19,6 +19,9 @@ options.setup({
 		formatting.clang_format,
 		formatting.black.with({ extra_args = { "--fast" } }),
 		formatting.prettier.with({ extra_args = { "--no-semi" } }),
+		formatting.gofumpt,
+		formatting.goimports_reviser,
+		formatting.golines,
 
 		-- diagnostics
 		diagnostics.mypy,

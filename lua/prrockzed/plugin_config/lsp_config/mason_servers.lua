@@ -23,6 +23,12 @@ local server = {
 	"tsserver", -- (lsp)
 	"prettier", -- (null-ls  formatting) ( for html, css, scss, json, markdown, vue too)
 	"eslint", -- (null-ls  diagnostics code_actions)
+
+	-- go, gomod, gowork, gotmpl
+	"gopls", -- (lsp)
+	"gofumpt", -- (null-ls  formatting)
+	"goimports_reviser", -- (null-ls  formatting)
+	"golines", -- (null-ls  formatting(lines))
 }
 
 options.setup({
