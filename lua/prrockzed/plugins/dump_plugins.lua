@@ -133,6 +133,20 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- automatically highlights other uses of the word under the cursor
+	{
+		"RRethy/vim-illuminate",
+		event = "BufReadPost",
+		config = function()
+			require("illuminate").configure({ delay = 500 })
+		end,
+    -- stylua: ignore
+    keys = {
+      { "]]", function() require("illuminate").goto_next_reference(false) end, desc = "Next Reference", },
+      { "[[", function() require("illuminate").goto_prev_reference(false) end, desc = "Prev Reference" },
+    },
+	},
+
 	-- vim-fugitive
 	{
 		"tpope/vim-fugitive",
