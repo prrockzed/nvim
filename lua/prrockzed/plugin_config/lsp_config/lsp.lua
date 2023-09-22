@@ -44,3 +44,10 @@ lspconfig.clangd.setup({
 		"proto",
 	},
 })
+
+-- python
+lspconfig.pyright.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "python" },
+})

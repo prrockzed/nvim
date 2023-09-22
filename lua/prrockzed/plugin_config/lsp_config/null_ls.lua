@@ -6,6 +6,7 @@ end
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local formatting = options.builtins.formatting
+local diagnostics = options.builtins.diagnostics
 
 options.setup({
 	debug = false,
@@ -15,6 +16,11 @@ options.setup({
 		-- formatting
 		formatting.stylua,
 		formatting.clang_format,
+		formatting.black.with({ extra_args = { "--fast" } }),
+
+		-- diagnostics
+		diagnostics.mypy,
+		diagnostics.ruff,
 	},
 
 	on_attach = function(client, bufnr)
