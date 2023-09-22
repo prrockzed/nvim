@@ -44,6 +44,34 @@ local mappings = {
 	["p"] = { "<cmd> lua require('telescope').extensions.projects.projects() <CR>", "Projects" },
 	["t"] = { "<cmd> ToggleTerm direction=float <CR>", "Terminal" },
 
+	-- Language server protocol
+	l = {
+		name = "LSP",
+		-- See `<cmd> :help vim.lsp.*` for documentation on any of the below functions
+		i = { "<cmd> LspInfo <CR>", "Lsp Info" },
+		f = { "<cmd> lua vim.lsp.buf.format { async = true } <CR>", "LSP Formatter" },
+		a = { "<cmd> lua vim.lsp.buf.code_action() <CR>", "LSP Code Action" },
+		h = { "<cmd> lua vim.lsp.buf.hover() <CR>", "LSP Hover" },
+		l = { "<cmd> lua vim.lsp.codelens.run() <CR>", "LSP Codelens Action" },
+		r = { "<cmd> lua vim.lsp.buf.rename() <CR>", "LSP Rename" },
+		s = { "<cmd> lua vim.lsp.buf.signature_help() <CR>", "LSP Signature Help" },
+		m = { "<cmd> lua vim.lsp.buf.implementation() <CR>", "LSP Implementation" },
+		e = { "<cmd> lua vim.lsp.buf.declaration() <CR>", "LSP Declaration" },
+		d = { "<cmd> lua vim.lsp.buf.definition() <CR>", "LSP Definition" },
+		t = { "<cmd> lua vim.lsp.buf.type_definition() <CR>", "LSP Definition Type" },
+		n = { "<cmd> lua vim.lsp.buf.references() <CR>", "LSP References" },
+	},
+
+	-- Diagnostics
+	d = {
+		name = "Diagnostics",
+		d = { "<cmd> lua vim.diagnostic.open_float() <CR>", "Word Diagnostic" },
+		j = { "<cmd> lua vim.diagnostic.goto_next({buffer=0}) <CR>", "Next Diagnostic" },
+		k = { "<cmd> lua vim.diagnostic.goto_prev({buffer=0}) <CR>", "Prev Diagnositc" },
+		b = { "<cmd> Telescope diagnostics bufnr=0 <CR>", "Buffer Diagnostics" },
+		p = { "<cmd> Telescope diagnostics <CR>", "Workspace Diagnostics" },
+	},
+
 	-- finding files/text etc
 	F = {
 		name = "Find",
