@@ -18,6 +18,11 @@ local server = {
 	"mypy", -- (null-ls  diagnostics  static type checking)
 	"ruff", -- (null-ls  diagnostics  linting)
 	"black", -- (null-ls  formatting)
+
+	-- typescript, javascript (with react)
+	"tsserver", -- (lsp)
+	"prettier", -- (null-ls  formatting) ( for html, css, scss, json, markdown, vue too)
+	"eslint", -- (null-ls  diagnostics code_actions)
 }
 
 options.setup({

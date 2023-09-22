@@ -7,6 +7,7 @@ local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local formatting = options.builtins.formatting
 local diagnostics = options.builtins.diagnostics
+local code_actions = options.builtins.code_actions
 
 options.setup({
 	debug = false,
@@ -17,10 +18,15 @@ options.setup({
 		formatting.stylua,
 		formatting.clang_format,
 		formatting.black.with({ extra_args = { "--fast" } }),
+		formatting.prettier.with({ extra_args = { "--no-semi" } }),
 
 		-- diagnostics
 		diagnostics.mypy,
 		diagnostics.ruff,
+		diagnostics.eslint,
+
+		-- code_actions
+		code_actions.eslint,
 	},
 
 	on_attach = function(client, bufnr)
