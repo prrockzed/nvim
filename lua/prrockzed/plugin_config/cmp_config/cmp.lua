@@ -24,6 +24,7 @@ options.setup({
 
 	window = {
 		completion = options.config.window.bordered(),
+		documentation = options.config.window.bordered(),
 	},
 
 	mapping = {

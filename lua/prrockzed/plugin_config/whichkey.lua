@@ -113,8 +113,8 @@ local mappings = {
 	},
 
 	-- setup related keymappings
-	l = {
-		name = "Lookup",
+	o = {
+		name = "Others",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
 		c = { "<cmd> Cheatsheet <CR>", "Cheatsheet Plugin" },
