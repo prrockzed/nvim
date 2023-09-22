@@ -29,6 +29,7 @@ local plugins = {
 	-- linting and formatting with the help of lspconfig
 	{
 		"jose-elias-alvarez/null-ls.nvim",
+		event = "VeryLazy",
 	},
 
 	-- package manager for neovim lsp

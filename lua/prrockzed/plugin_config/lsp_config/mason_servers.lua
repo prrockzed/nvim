@@ -8,6 +8,10 @@ local server = {
 	-- for lua
 	"lua_ls",
 	"stylua",
+
+	-- for cpp
+	"clangd", -- (lsp)
+	"clang-format", -- (null-ls  formatting)
 }
 
 options.setup({

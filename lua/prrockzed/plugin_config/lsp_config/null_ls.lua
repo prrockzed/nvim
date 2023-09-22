@@ -10,8 +10,11 @@ local formatting = options.builtins.formatting
 options.setup({
 	debug = false,
 	sources = {
+		-- the file type is given in mason_servers.lua file under mason plugin
+
 		-- formatting
 		formatting.stylua,
+		formatting.clang_format,
 	},
 
 	on_attach = function(client, bufnr)

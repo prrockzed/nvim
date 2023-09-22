@@ -6,6 +6,7 @@ end
 local on_attach = require("prrockzed.plugin_config.lsp_config.handlers").on_attach
 local capabilities = require("prrockzed.plugin_config.lsp_config.handlers").capabilities
 
+-- lua
 lspconfig.lua_ls.setup({
 	on_attach = on_attach,
 	capabilities = capabilities,
@@ -23,5 +24,23 @@ lspconfig.lua_ls.setup({
 				},
 			},
 		},
+	},
+})
+
+-- cpp
+lspconfig.clangd.setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16",
+	},
+	filetypes = {
+		"c",
+		"cpp",
+		"objc",
+		"objcpp",
+		"cuda",
+		"proto",
 	},
 })
