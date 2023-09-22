@@ -29,6 +29,10 @@ local server = {
 	"gofumpt", -- (null-ls  formatting)
 	"goimports_reviser", -- (null-ls  formatting)
 	"golines", -- (null-ls  formatting(lines))
+
+	-- rust
+	"rust_analyzer", -- (lsp)
+	-- "rust.vim"  (plugin for autoformatting)
 }
 
 options.setup({
