@@ -133,6 +133,12 @@ local plugins = {
 		},
 	},
 
+	-- find projects across the machine
+	{
+		"ahmedkhalf/project.nvim",
+		lazy = false,
+	},
+
 	-- for comments
 	{
 		"numToStr/Comment.nvim",
