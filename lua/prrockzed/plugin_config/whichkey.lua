@@ -130,6 +130,15 @@ local mappings = {
 		e = { "<cmd> RunClose <CR>", "Run Close" },
 	},
 
+	-- CP - cpbooster
+	r = {
+		name = "CP - cpbooster",
+		n = { "<cmd> !cpb clone --here <CR>", "Clone Problem/Contest" },
+		t = { "<cmd> Test <CR>", "Test" },
+		s = { "<cmd> Submit <CR>", "Submit" },
+		d = { "<cmd> Debug <CR>", "Debug" },
+	},
+
 	-- Buffer management using Barbar plugin
 	B = {
 		name = "Buffer",

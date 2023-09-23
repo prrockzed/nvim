@@ -118,6 +118,12 @@ local plugins = {
 		event = "VeryLazy",
 	},
 
+	-- competitive programming - cpbooster plugin
+	{
+		"searleser97/cpbooster.vim",
+		event = "VeryLazy",
+	},
+
 	-- lazy git plugin for neovim
 	{
 		"kdheepak/lazygit.nvim",
