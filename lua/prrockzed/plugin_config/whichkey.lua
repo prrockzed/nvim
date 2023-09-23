@@ -120,6 +120,16 @@ local mappings = {
 		},
 	},
 
+	-- code runner
+	o = {
+		name = "Code Runner",
+		r = { "<cmd> RunCode <CR>", "Run Code" },
+		o = { "<cmd> RunFile <CR>", "Run File" },
+		t = { "<cmd> RunFile toggleterm <CR>", "Run File in FloatTerm" },
+		p = { "<cmd> RunProject <CR>", "Run Project" },
+		e = { "<cmd> RunClose <CR>", "Run Close" },
+	},
+
 	-- Buffer management using Barbar plugin
 	B = {
 		name = "Buffer",
@@ -141,7 +151,7 @@ local mappings = {
 	},
 
 	-- setup related keymappings
-	o = {
+	z = {
 		name = "Others",
 		t = { "<cmd> Telescope colorscheme <CR>", "Colorschemes" },
 		h = { "<cmd> checkhealth <CR>", "Checkhealth" },
