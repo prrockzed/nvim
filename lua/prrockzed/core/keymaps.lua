@@ -42,11 +42,11 @@ map("n", "<S-u>", ":BufferMovePrevious<CR>", opts)
 map("n", "<S-j>", "<Esc>:m .+1<CR>==gi", opts)
 map("n", "<S-k>", "<Esc>:m .-2<CR>==gi", opts)
 
--- Esc to No Highlight
-map("n", "<Esc>", ":noh <CR>", opts)
-
--- Copy whole file
-map("n", "<C-c>",  "<cmd> %y+ <CR><CR>", opts)
+-- Others
+map("n", "<Esc>", ":noh <CR>", opts) -- Esc to No Highlight
+map("n", "q", ":noh <CR>", opts) -- Esc to No Highlight
+map("n", "<C-c>", "<cmd> %y+ <CR><CR>", opts) -- Copy Whole File
+map("n", "d", '"_d', opts) -- Delete Without Yanking
 
 -- Insert --
 -- Press kj fast to exit insert mode
