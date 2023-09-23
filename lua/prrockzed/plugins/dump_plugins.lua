@@ -26,6 +26,11 @@ local plugins = {
 		},
 	},
 
+	-- lsp saga for better lsp experience
+	{
+		"nvimdev/lspsaga.nvim",
+	},
+
 	-- linting and formatting with the help of lspconfig
 	{
 		"jose-elias-alvarez/null-ls.nvim",
