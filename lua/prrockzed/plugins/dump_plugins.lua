@@ -144,6 +144,14 @@ local plugins = {
 		lazy = false,
 	},
 
+	-- neorg for note taking
+	{
+		"nvim-neorg/neorg",
+		build = ":Neorg sync-parsers",
+		dependencies = { "nvim-lua/plenary.nvim" },
+		event = "VeryLazy",
+	},
+
 	-- for comments
 	{
 		"numToStr/Comment.nvim",

@@ -85,6 +85,17 @@ local mappings = {
 		c = { "<cmd> Telescope current_buffer_fuzzy_find <CR>", "Find in Current Buffer" },
 	},
 
+	-- note taking using neorg
+	a = {
+		name = "Neorg - Notes",
+		a = { "<cmd> Neorg workspace notes <CR>", "Notes" },
+		p = { "<cmd> Neorg workspace cp <CR>", "Competitive Programming" },
+		i = { "<cmd> Neorg workspace iitkgp <CR>", "IIT KGP" },
+		d = { "<cmd> Neorg workspace dev <CR>", "Development" },
+		h = { "<cmd> h Neorg <CR>", "Neorg Manual" },
+		t = { "<cmd> Neorg toggle-concealer <CR>", "Neorg Manual Toggle Concealer" },
+	},
+
 	-- all terminals
 	T = {
 		name = "All Terminal",
