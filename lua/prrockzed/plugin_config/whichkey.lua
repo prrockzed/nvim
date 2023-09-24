@@ -88,13 +88,35 @@ local mappings = {
 	-- note taking using neorg
 	a = {
 		name = "Neorg - Notes",
-		a = { "<cmd> Neorg workspace notes <CR>", "Notes" },
-		p = { "<cmd> Neorg workspace cp <CR>", "Competitive Programming" },
-		i = { "<cmd> Neorg workspace iitkgp <CR>", "IIT KGP" },
-		d = { "<cmd> Neorg workspace dev <CR>", "Development" },
-		o = { "<cmd> Neorg workspace notes <CR> <cmd> Neorg journal <CR>", "Journal" },
+		l = { "<cmd> Neorg keybind norg core.pivot.toggle-list-type <CR>", "Toggle list type" },
+		n = { "<cmd> Neorg keybind norg core.dirman.new.note <CR>", "New Note" },
 		h = { "<cmd> h Neorg <CR>", "Neorg Manual" },
 		t = { "<cmd> Neorg toggle-concealer <CR>", "Neorg Manual Toggle Concealer" },
+		o = { "<cmd> Neorg workspace notes <CR> <cmd> Neorg journal <CR>", "To Do" },
+		s = {
+			name = "Heading",
+			j = { "<cmd> Neorg keybind norg core.integrations.treesitter.next.heading <CR>", "Next Heading" },
+			k = { "<cmd> Neorg keybind norg core.integrations.treesitter.previous.heading <CR>", "Previous Heading" },
+			n = { "<cmd> Neorg keybind norg core.integrations.treesitter.next.link <CR>", "Next Link" },
+			p = { "<cmd> Neorg keybind norg core.integrations.treesitter.previous.link <CR>", "Previous Link" },
+		},
+		a = {
+			name = "Workspace",
+			a = { "<cmd> Neorg workspace notes <CR>", "Notes" },
+			p = { "<cmd> Neorg workspace cp <CR>", "Competitive Programming" },
+			i = { "<cmd> Neorg workspace iitkgp <CR>", "IIT KGP" },
+			d = { "<cmd> Neorg workspace dev <CR>", "Development" },
+			o = { "<cmd> Neorg workspace notes <CR> <cmd> Neorg journal <CR>", "Journal" },
+		},
+		d = {
+			name = "To Do",
+			d = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_done <CR>", "Task Done" },
+			p = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_pending <CR>", "Task Pending" },
+			h = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_on_hold <CR>", "Task On Hold" },
+			u = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_undone <CR>", "Task Undone" },
+			i = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_important <CR>", "Task Important" },
+			c = { "<cmd> Neorg keybind norg core.qol.todo_items.todo.task_cancelled <CR>", "Task Cancelled" },
+		},
 	},
 
 	-- all terminals

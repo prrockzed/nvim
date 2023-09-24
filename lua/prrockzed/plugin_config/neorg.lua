@@ -9,6 +9,14 @@ end
 
 options.setup({
 	load = {
+		["core.keybinds"] = {
+			config = {
+				default_keybinds = false,
+				hook = function(keybinds)
+					keybinds.map("norg", "n", "<C-j>", "<cmd> Neorg keybind norg core.itero.next-iteration <CR>a")
+				end,
+			},
+		},
 		["core.defaults"] = {}, -- Loads default behaviour
 		["core.concealer"] = {}, -- Adds pretty icons to your documents
 		["core.dirman"] = { -- Manages Neorg workspaces

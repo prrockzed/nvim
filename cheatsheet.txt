@@ -9,3 +9,5 @@ In Normal Mode:
 ` or '      --> File which key
 <C-c>       --> Copy whole file
 W           --> Collapse nvim tree recursively
+<C-v>       --> Selects vertically(Visual Block)
+<S-v>       --> Selects Line(Visual Line)
