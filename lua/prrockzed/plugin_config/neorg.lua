@@ -1,3 +1,7 @@
+vim.api.nvim_create_autocmd({ "BufEnter", "BufWinEnter" }, {
+	pattern = { "*.norg" },
+	command = "set conceallevel=3",
+})
 local status_ok, options = pcall(require, "neorg")
 if not status_ok then
 	return

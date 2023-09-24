@@ -92,6 +92,7 @@ local mappings = {
 		p = { "<cmd> Neorg workspace cp <CR>", "Competitive Programming" },
 		i = { "<cmd> Neorg workspace iitkgp <CR>", "IIT KGP" },
 		d = { "<cmd> Neorg workspace dev <CR>", "Development" },
+		o = { "<cmd> Neorg workspace notes <CR> <cmd> Neorg journal <CR>", "Journal" },
 		h = { "<cmd> h Neorg <CR>", "Neorg Manual" },
 		t = { "<cmd> Neorg toggle-concealer <CR>", "Neorg Manual Toggle Concealer" },
 	},
