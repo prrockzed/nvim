@@ -11,3 +11,6 @@ In Normal Mode:
 W           --> Collapse nvim tree recursively
 <C-v>       --> Selects vertically(Visual Block)
 <S-v>       --> Selects Line(Visual Line)
+<C-j>       --> Iterate to next iteration in neorg
+fa          --> Format on save in neorg
+<CR>        --> Hop to the link

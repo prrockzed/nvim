@@ -14,6 +14,8 @@ options.setup({
 				default_keybinds = false,
 				hook = function(keybinds)
 					keybinds.map("norg", "n", "<C-j>", "<cmd> Neorg keybind norg core.itero.next-iteration <CR>a")
+					keybinds.map("norg", "n", "<CR>", "<cmd> Neorg keybind norg core.esupports.hop.hop-link <CR>")
+					keybinds.map("norg", "n", "fa", "==")
 				end,
 			},
 		},
