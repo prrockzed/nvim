@@ -90,6 +90,7 @@ options.setup({
 		{ name = "buffer" },
 		{ name = "nvim_lua" },
 		{ name = "path" },
+		{ name = "lua-latex-symbols", option = { cache = true } },
 	},
 
 	confirm_opts = {

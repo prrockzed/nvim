@@ -32,6 +32,8 @@ vim.api.nvim_create_autocmd("InsertLeave", {
 options.config.set_config({
 	history = true, --keep around last snippet local to jump back
 	updateevents = "TextChanged,TextChangedI", --update changes as you type
+	enable_autosnippets = true, -- Enable autotriggered snippets
+	store_selection_keys = "<C-i>", -- Use Tab (or some other key if you prefer) to trigger visual selection
 })
 
 -- luasnip custom keymappings
