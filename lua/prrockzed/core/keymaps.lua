@@ -56,6 +56,9 @@ map("i", "kj", "<ESC>", opts)
 map("i", "<C-b>", "<ESC>^i", opts) -- beginning of line
 map("i", "<C-e>", "<End>", opts) -- end of line
 
+-- to enter digraphs symbols in vim
+map("i", "<C-s>", "<C-k>", opts)
+
 -- navigate within insert mode
 map("i", "<C-h>", "<Left>", opts) -- Move left
 map("i", "<C-l>", "<Right>", opts) -- Move right

@@ -22,6 +22,7 @@ options.setup({
 		formatting.gofumpt,
 		formatting.goimports_reviser,
 		formatting.golines,
+		formatting.latexindent,
 
 		-- diagnostics
 		diagnostics.mypy,

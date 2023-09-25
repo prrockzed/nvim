@@ -159,6 +159,12 @@ local plugins = {
 		opts = {},
 	},
 
+	-- unicode characters
+	{
+		"amarakon/nvim-cmp-lua-latex-symbols",
+		event = "VeryLazy",
+	},
+
 	-- gitsigns to highlight git changes
 	{
 		"lewis6991/gitsigns.nvim",

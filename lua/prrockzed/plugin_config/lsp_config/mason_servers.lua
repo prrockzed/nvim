@@ -33,6 +33,9 @@ local server = {
 	-- rust
 	"rust_analyzer", -- (lsp)
 	-- "rust.vim"  (plugin for autoformatting)
+
+	-- latex
+	"latexindent",
 }
 
 options.setup({
