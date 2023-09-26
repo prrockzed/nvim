@@ -202,7 +202,9 @@ local mappings = {
 		c = { "<cmd> Cheatsheet <CR>", "Cheatsheet Plugin" },
 		f = { "<cmd> Cheatsheet! <CR>", "Cheatsheet Floating Window" },
 		s = { "<cmd> CheatsheetEdit <CR>", "Cheatsheet File" },
+		x = { "<cmd> e ~/.config/nvim/lua/prrockzed/snippets/tex/init.lua <CR>", "Latex Custom Snippets" },
 		w = { "<cmd> Lspsaga winbar_toggle <CR>", "Lspsaga Winbar Toggle" },
+		z = { "<cmd> lua require('gitsigns').detach() <CR>", "Disable Gitsigns" },
 	},
 
 	-- Update/Install plugins and languages extensions

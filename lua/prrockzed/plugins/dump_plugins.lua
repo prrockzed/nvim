@@ -144,6 +144,11 @@ local plugins = {
 		lazy = false,
 	},
 
+	-- vimtex plugin for latex
+	{
+		"lervag/vimtex",
+	},
+
 	-- neorg for note taking
 	{
 		"nvim-neorg/neorg",
