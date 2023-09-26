@@ -11,31 +11,31 @@ local server = {
 
 	-- for cpp
 	"clangd", -- (lsp)
-	"clang-format", -- (null-ls  formatting)
+	-- "clang-format", -- (null-ls  formatting) Manually Installed
 
 	-- python
 	"pyright", -- (lsp)
-	"mypy", -- (null-ls  diagnostics  static type checking)
-	"ruff", -- (null-ls  diagnostics  linting)
-	"black", -- (null-ls  formatting)
+	-- "mypy", -- (null-ls  diagnostics  static type checking) Manually Installed
+	-- "ruff", -- (null-ls  diagnostics  linting) Manually Installed
+	-- "black", -- (null-ls  formatting) Manually Installed
 
 	-- typescript, javascript (with react)
 	"tsserver", -- (lsp)
-	"prettier", -- (null-ls  formatting) ( for html, css, scss, json, markdown, vue too)
+	-- "prettier", -- (null-ls  formatting) ( for html, css, scss, json, markdown, vue too) Manually Installed
 	"eslint", -- (null-ls  diagnostics code_actions)
 
 	-- go, gomod, gowork, gotmpl
 	"gopls", -- (lsp)
-	"gofumpt", -- (null-ls  formatting)
-	"goimports_reviser", -- (null-ls  formatting)
-	"golines", -- (null-ls  formatting(lines))
+	-- "gofumpt", -- (null-ls  formatting) Manually Installed
+	-- "goimports_reviser", -- (null-ls  formatting) Manually Installed
+	-- "golines", -- (null-ls  formatting(lines)) Manually Installed
 
 	-- rust
 	"rust_analyzer", -- (lsp)
-	-- "rust.vim"  (plugin for autoformatting)
+	-- "rust.vim"  (plugin for autoformatting) Manually Installed
 
 	-- latex
-	"latexindent",
+	-- "latexindent", Manually Installed
 }
 
 options.setup({
