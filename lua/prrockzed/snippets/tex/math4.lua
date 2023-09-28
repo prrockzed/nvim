@@ -53,6 +53,10 @@ ls.add_snippets("tex", {
 	s({ trig = "laa", snippetType = "autosnippet" }, {
 		t("\\laplacian "),
 	}, { condition = tex.in_mathzone }),
+	-- HBAR, i.e., \hbar
+	s({ trig = "hb", snippetType = "autosnippet" }, {
+		t("\\hbar "),
+	}, { condition = tex.in_mathzone }),
 	-- PARALLEL SYMBOL, i.e. \parallel
 	s({ trig = "||", snippetType = "autosnippet" }, {
 		t("\\parallel"),

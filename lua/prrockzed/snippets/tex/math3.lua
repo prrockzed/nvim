@@ -19,10 +19,10 @@ end
 
 -- adding snippets
 ls.add_snippets("tex", {
-	-- DERIVATIVE with denominator only
+	-- PARTIAL DERIVATIVE
 	s(
-		{ trig = "([^%a])dV", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-		fmta("<>\\dvOne{<>}", {
+		{ trig = "([^%a])pr", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+		fmta("<>\\partial{<>}", {
 			f(function(_, snip)
 				return snip.captures[1]
 			end),
@@ -30,6 +30,19 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
+	-- DERIVATIVE with denominator only
+	s(
+		{ trig = "([^%a])dV", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+		fmta("<>\\dv{<>}", {
+			f(function(_, snip)
+				return snip.captures[1]
+			end),
+			d(1, get_visual),
+		}),
+		{ condition = tex.in_mathzone }
+	),
+
 	-- DERIVATIVE with numerator and denominator
 	s(
 		{ trig = "([^%a])dvv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -42,10 +55,11 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- DERIVATIVE with numerator, denominator, and higher-order argument
 	s(
 		{ trig = "([^%a])ddv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-		fmta("<>\\dvN{<>}{<>}{<>}", {
+		fmta("<>\\dv[<>]{<>}{<>}", {
 			f(function(_, snip)
 				return snip.captures[1]
 			end),
@@ -55,10 +69,11 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- PARTIAL DERIVATIVE with denominator only
 	s(
 		{ trig = "([^%a])pV", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-		fmta("<>\\pdvOne{<>}", {
+		fmta("<>\\pdv{<>}", {
 			f(function(_, snip)
 				return snip.captures[1]
 			end),
@@ -66,6 +81,7 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- PARTIAL DERIVATIVE with numerator and denominator
 	s(
 		{ trig = "([^%a])pvv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -78,10 +94,11 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- PARTIAL DERIVATIVE with numerator, denominator, and higher-order argument
 	s(
 		{ trig = "([^%a])ppv", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
-		fmta("<>\\pdvN{<>}{<>}{<>}", {
+		fmta("<>\\pdv[<>]{<>}{<>}", {
 			f(function(_, snip)
 				return snip.captures[1]
 			end),
@@ -91,6 +108,36 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
+	-- PARTIAL DERIVATIVE with numerator and 2 variable denominators
+	s(
+		{ trig = "([^%a])pv2", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+		fmta("<>\\pdv{<>}{<>}{<>}", {
+			f(function(_, snip)
+				return snip.captures[1]
+			end),
+			i(1),
+			i(2),
+			i(3),
+		}),
+		{ condition = tex.in_mathzone }
+	),
+
+	-- PARTIAL DERIVATIVE with numerator and 3 variable denominators
+	s(
+		{ trig = "([^%a])pv3", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
+		fmta("<>\\frac{\\partial^3{<>}}{\\partial{<>}\\partial{<>}\\partial{<>}}", {
+			f(function(_, snip)
+				return snip.captures[1]
+			end),
+			i(1),
+			i(2),
+			i(3),
+			i(4),
+		}),
+		{ condition = tex.in_mathzone }
+	),
+
 	-- SUM with lower limit
 	s(
 		{ trig = "([^%a])sM", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -102,6 +149,7 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- SUM with upper and lower limit
 	s(
 		{ trig = "([^%a])smm", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -114,6 +162,7 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- INTEGRAL with upper and lower limit
 	s(
 		{ trig = "([^%a])intt", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -126,6 +175,7 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- INTEGRAL from positive to negative infinity
 	s(
 		{ trig = "([^%a])intf", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
@@ -136,6 +186,7 @@ ls.add_snippets("tex", {
 		}),
 		{ condition = tex.in_mathzone }
 	),
+
 	-- BOXED command
 	s(
 		{ trig = "([^%a])bb", wordTrig = false, regTrig = true, snippetType = "autosnippet" },
