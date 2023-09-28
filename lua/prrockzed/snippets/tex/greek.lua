@@ -3,9 +3,6 @@ local s = ls.snippet
 local t = ls.text_node
 
 ls.add_snippets("tex", {
-	-- s(";a", t("\\alpha")),
-	-- s(";b", t("\\beta")),
-	-- s(";g", t("\\gamma")),
 	s({ trig = ";a", snippetType = "autosnippet" }, {
 		t("\\alpha"),
 	}),
