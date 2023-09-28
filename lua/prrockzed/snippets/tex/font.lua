@@ -5,13 +5,13 @@ local i = ls.insert_node
 
 local line_begin = require("luasnip.extras.expand_conditions").line_begin
 
-local italics = s(";it", {
+local italics = s({ trig = "zit", snippetType = "autosnippet" }, {
 	t("\\textit{"),
 	i(1),
 	t("}"),
 })
 
-local bold = s(";bd", {
+local bold = s({ trig = "zbd", snippetType = "autosnippet" }, {
 	t("\\textbf{"),
 	i(1),
 	t("}"),
