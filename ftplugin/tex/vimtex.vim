@@ -45,3 +45,7 @@ map [* <plug>(vimtex-[star
 nmap ;l :w<CR><plug>(vimtex-compile)<CR>
 nmap ;c <plug>(vimtex-compile-ss)
 nmap ;v <plug>(vimtex-view)
+
+" jumping to the next tabstop
+imap <silent><expr> jk luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : 'jk'
+smap <silent><expr> jk luasnip#jumpable(1) ? '<Plug>luasnip-jump-next' : 'jk'
