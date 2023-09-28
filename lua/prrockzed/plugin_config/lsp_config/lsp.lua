@@ -105,7 +105,7 @@ lspconfig.rust_analyzer.setup({
 })
 
 -- servers(that don't need extra configuration)
-local servers = {}
+local servers = { "vimls", "texlab" }
 
 for _, lsp in ipairs(servers) do
 	lspconfig[lsp].setup({

@@ -5,9 +5,12 @@ end
 
 -- list of servers for mason to install
 local server = {
+	-- vim
+	"vimls",
+
 	-- for lua
 	"lua_ls", -- (lsp)
-	"stylua", -- (null-ls  formatting)
+	-- "stylua", -- (null-ls  formatting)
 
 	-- for cpp
 	"clangd", -- (lsp)
@@ -35,6 +38,7 @@ local server = {
 	-- "rust.vim"  (plugin for autoformatting) Manually Installed
 
 	-- latex
+	"texlab",
 	-- "latexindent", Manually Installed
 }
 
