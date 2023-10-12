@@ -190,6 +190,23 @@ local plugins = {
     },
 	},
 
+	-- nvim surround
+	{
+		"kylechui/nvim-surround",
+		version = "*", -- Use for stability; omit to use `main` branch for the latest features
+		event = "VeryLazy",
+		config = function()
+			require("nvim-surround").setup({
+				-- Configuration here, or leave empty to use defaults
+			})
+		end,
+	},
+
+	-- vim closetag for html
+	{
+		"alvan/vim-closetag",
+	},
+
 	-- vim-fugitive
 	{
 		"tpope/vim-fugitive",
@@ -225,6 +242,7 @@ local plugins = {
 	-- rainbow plugin for colorful brackets
 	{
 		"HiPhish/rainbow-delimiters.nvim",
+		main = "ibl",
 		lazy = false,
 	},
 

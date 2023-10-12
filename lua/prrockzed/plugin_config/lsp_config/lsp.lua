@@ -30,22 +30,14 @@ lspconfig.lua_ls.setup({
 })
 
 -- cpp
-lspconfig.clangd.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	cmd = {
-		"clangd",
-		"--offset-encoding=utf-16",
-	},
-	filetypes = {
-		"c",
-		"cpp",
-		"objc",
-		"objcpp",
-		"cuda",
-		"proto",
-	},
-})
+-- lspconfig.clangd.setup({
+-- 	cmd = {
+-- 		"clangd",
+-- 		"--offset-encoding=utf-16",
+-- 	},
+-- })
+
+lspconfig.ccls.setup({})
 
 -- python
 lspconfig.pyright.setup({

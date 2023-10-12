@@ -101,9 +101,9 @@ ls.add_snippets("tex", {
 		{ trig = "nn", snippetType = "autosnippet" },
 		fmta(
 			[[
-        \begin{equation*}
+        \begin{equation}
             <>
-        \end{equation*}
+        \end{equation}
       ]],
 			{
 				i(1),

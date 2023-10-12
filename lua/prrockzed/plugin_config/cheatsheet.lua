@@ -1,4 +1,4 @@
-local status_ok, options = pcall(require, "comment")
+local status_ok, options = pcall(require, "cheatsheet")
 if not status_ok then
 	return
 end

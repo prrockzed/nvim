@@ -46,6 +46,16 @@ ls.add_snippets("tex", {
 			d(1, get_visual),
 		})
 	),
+	-- UNDERLINE i.e. \underline
+	s(
+		{ trig = "tun", regTrig = true, wordTrig = false, snippetType = "autosnippet" },
+		fmta("<>\\underline{<>}", {
+			f(function(_, snip)
+				return snip.captures[1]
+			end),
+			d(1, get_visual),
+		})
+	),
 	-- BOLD i.e. \textbf
 	s(
 		{ trig = "tbb", snippetType = "autosnippet" },

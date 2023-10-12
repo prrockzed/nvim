@@ -28,6 +28,7 @@ options.setup({
 					cp = "~/.notes/cp",
 					dev = "~/.notes/dev",
 					iitkgp = "~/.notes/iitkgp",
+					entertainment = "~/.notes/entertainment",
 				},
 			},
 		},

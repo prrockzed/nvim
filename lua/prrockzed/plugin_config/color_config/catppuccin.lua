@@ -38,7 +38,7 @@ options.setup({
 	custom_highlights = {},
 	integrations = {
 		cmp = true,
-		gitsigns = true,
+		gitsigns = false,
 		nvimtree = true,
 		treesitter = true,
 		notify = false,

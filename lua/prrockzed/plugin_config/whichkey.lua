@@ -37,7 +37,7 @@ local bookmarks = {
 local mappings = {
 	["e"] = { "<cmd> NvimTreeToggle<cr>", "Nvim Tree Toggle" },
 	["N"] = { "<cmd> enew <CR>", "New buffer" },
-	["w"] = { "<cmd> w! <CR>", "Save" },
+	["w"] = { "<cmd> w! <CR><CR>", "Save" },
 	["q"] = { "<cmd> q! <CR>", "Quit" },
 	["c"] = { "<cmd> BufferClose <CR>", "Close Buffer" },
 	["f"] = { "<cmd> Telescope find_files <CR>", "Find files" },
@@ -61,6 +61,7 @@ local mappings = {
 		t = { "<cmd> Lspsaga peek_type_definition <CR>", "Definition Type" },
 		n = { "<cmd> lua vim.lsp.buf.references() <CR>", "References" },
 		o = { "<cmd> Lspsaga outline <CR>", "Outline" },
+		p = { "<cmd> LspStop <CR>", "Lsp Stop" },
 	},
 
 	-- Diagnostics
@@ -106,6 +107,7 @@ local mappings = {
 			p = { "<cmd> Neorg workspace cp <CR>", "Competitive Programming" },
 			i = { "<cmd> Neorg workspace iitkgp <CR>", "IIT KGP" },
 			d = { "<cmd> Neorg workspace dev <CR>", "Development" },
+			e = { "<cmd> Neorg workspace entertainment <CR> <cmd> Entertainment <CR>", "Journal" },
 			o = { "<cmd> Neorg workspace notes <CR> <cmd> Neorg journal <CR>", "Journal" },
 		},
 		d = {
