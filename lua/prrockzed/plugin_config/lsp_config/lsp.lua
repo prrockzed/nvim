@@ -30,12 +30,12 @@ lspconfig.lua_ls.setup({
 })
 
 -- cpp
--- lspconfig.clangd.setup({
--- 	cmd = {
--- 		"clangd",
--- 		"--offset-encoding=utf-16",
--- 	},
--- })
+lspconfig.clangd.setup({
+	cmd = {
+		"clangd",
+		"--offset-encoding=utf-16",
+	},
+})
 
 lspconfig.ccls.setup({})
 
@@ -59,27 +59,27 @@ lspconfig.tsserver.setup({
 })
 
 -- go, gomod, gowork, gotmpl
-lspconfig.gopls.setup({
-	on_attach = on_attach,
-	capabilities = capabilities,
-	cmd = { "gopls" },
-	filetypes = {
-		"go",
-		"gomod",
-		"gowork",
-		"gotmpl",
-	},
-	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
-	settings = {
-		gopls = {
-			completeUnimported = true,
-			usePlaceholders = true,
-			analyses = {
-				unusedparams = true,
-			},
-		},
-	},
-})
+-- lspconfig.gopls.setup({
+-- 	on_attach = on_attach,
+-- 	capabilities = capabilities,
+-- 	cmd = { "gopls" },
+-- 	filetypes = {
+-- 		"go",
+-- 		"gomod",
+-- 		"gowork",
+-- 		"gotmpl",
+-- 	},
+-- 	root_dir = util.root_pattern("go.work", "go.mod", ".git"),
+-- 	settings = {
+-- 		gopls = {
+-- 			completeUnimported = true,
+-- 			usePlaceholders = true,
+-- 			analyses = {
+-- 				unusedparams = true,
+-- 			},
+-- 		},
+-- 	},
+-- })
 
 -- rust
 lspconfig.rust_analyzer.setup({
